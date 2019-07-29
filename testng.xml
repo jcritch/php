@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="phpTravels">
+
+ <test name="Login">
+ 
+ <classes>
+ 
+ <class name="seleniumPages.Page_Loginpage" />
+ 
+ </classes>
+ 
+ </test>
+ 
+</suite>
