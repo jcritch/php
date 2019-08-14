@@ -1,6 +1,6 @@
-16:28:33.885 [main] ERROR common.Page_BasePage - This is a logging test for Registerpage
-16:29:09.170 [main] ERROR common.Page_BasePage - This is a logging test for Loginpage
-16:30:41.265 [main] ERROR common.Page_BasePage - This is a logging test for Loginpage
-16:33:05.156 [main] ERROR common.Page_BasePage - This is a logging test for Homepage
-16:33:26.529 [main] ERROR common.Page_BasePage - This is a logging test for Registerpage
-16:33:56.466 [main] ERROR common.Page_BasePage - This is a logging test for Loginpage
+13:30:04.054 [main] ERROR common.Page_BasePage - This is a logging test for Loginpage
+13:33:35.496 [main] ERROR common.Page_BasePage - This is a logging test for Searchpage
+13:33:58.116 [main] ERROR common.Page_BasePage - This is a logging test for Homepage
+13:34:18.912 [main] ERROR common.Page_BasePage - This is a logging test for Registerpage
+13:34:43.574 [main] ERROR common.Page_BasePage - This is a logging test for Loginpage
+13:37:35.864 [main] ERROR common.Page_BasePage - This is a logging test for Searchpage

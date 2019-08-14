@@ -1,11 +1,15 @@
 package stepDefinitions;
 
+import org.junit.runner.RunWith;
+
 import cucumber.api.java.en.And;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 import seleniumPages.Page_Registerpage;
+
 
 public class StepDefs_Registerpage {
 
@@ -14,6 +18,7 @@ public class StepDefs_Registerpage {
 	@Given("^user launches Browser$")
     public void user_launches_browser() throws Exception {
        phpRegisterPage.LaunchBrowser();
+     
     }
 
     @When("^user opens Homepage$")
@@ -43,14 +48,14 @@ public class StepDefs_Registerpage {
     }
 
     @And("^user enters the Email field with \"([^\"]*)\"$")
-    public void user_enters_the_email_field_with_something(String strArg1) throws Exception {
+   public void user_enters_the_email_field_with_something(String strArg1) throws Exception {
        phpRegisterPage.enterEmail();
     }
 
     @And("^user enters the Password field with \"([^\"]*)\"$")
     public void user_enters_the_password_field_with_something(String strArg1) throws Exception {
        phpRegisterPage.enterPassword();
-    }
+   }
 
     @And("^user enters the Confirm Password field with \"([^\"]*)\"$")
     public void user_enters_the_confirm_password_field_with_something(String strArg1) throws Exception {

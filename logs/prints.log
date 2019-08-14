@@ -1,1 +1,3 @@
-16:34:45.081 [main] ERROR common.Page_BasePage - This is a logging test for Loginpage
+13:37:58.683 [main] ERROR common.Page_BasePage - This is a logging test for Homepage
+13:38:22.280 [main] ERROR common.Page_BasePage - This is a logging test for Registerpage
+13:38:58.408 [main] ERROR common.Page_BasePage - This is a logging test for Loginpage

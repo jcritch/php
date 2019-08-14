@@ -3,14 +3,28 @@
 
 <suite name="phpTravels">
 
- <test name="Login">
+ <test name="Homepage">
+ 	<classes>
+ 		<class name="seleniumPages.Page_Homepage" />
+	</classes>
+ </test>
  
- <classes>
+ <test name="Register">
+ 	<classes>
+ 		<class name="seleniumPages.Page_Registerpage" />
+ 	</classes>
+ </test>	
  
- <class name="seleniumPages.Page_Loginpage" />
- 
+ <test name="Login">	
+ 	<classes>
+ 		<class name="seleniumPages.Page_Loginpage" />
+ 	</classes>
+ </test>	
+ 	
+ <test name="Search">
+ 	<classes>	
+ 		<class name="seleniumPages.Page_GuestSearch" />
  </classes>
- 
  </test>
  
 </suite>

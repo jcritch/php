@@ -19,11 +19,18 @@ And user enters the Confirm Password field with "password1"
 And user clicks the SignUp button
 Then verify account page opens
 
-Scenario: Check that the user can login
+Scenario Outline: Check that the user can login
 Given user launches Chrome
 When user opens PHP Landing page
 Then user navigates to the Login Page
-And user enters the email field with "fl@inmarsat.com"
-And user enters the password field with "password1"
+And user enters <email> and <password> Login information 
 And user clicks the Login button
 Then verify the user account page opens
+
+Examples:
+|email				|password	|
+|fl@inmarsat.com	|password1	|
+
+
+
+
