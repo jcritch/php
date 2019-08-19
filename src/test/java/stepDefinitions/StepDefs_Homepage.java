@@ -19,14 +19,9 @@ public class StepDefs_Homepage {
 	    	phpHomepage.openPHPURL();
 	    }
 
-	   //@Then("^I verify that the page displays search text box$")
-	    //public void i_verify_that_the_page_displays_search_text_box() throws Exception {
-	    	//phpHomepage.checkSearchBoxIsDisplayed();
-	   // }
-
-	    @Then("^I verify that the page displays PHP Search button$")
-	    public void the_page_displays_php_search_button() throws Exception {
-	    	phpHomepage.checkSearchButtonIsDisplayed();
+	    @Then("^I verify that the Hotels link is displayed$")
+	    public void i_verify_that_the_hotels_link_is_displayed() throws Exception {
+	    	phpHomepage.checkHotelLink();
 	    }
 
 	}

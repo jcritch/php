@@ -3,8 +3,7 @@ Feature: PHP Homepage
 Scenario: Check that the main elements on PHP Homepage are displayed
 Given I launch Chrome Browser
 When I open PHP Homepage
-Then I verify that the page displays search text box
-Then I verify that the page displays PHP Search button
+Then I verify that the Hotels link is displayed
 
 Scenario: Check that the user can create an account
 Given user launches Browser

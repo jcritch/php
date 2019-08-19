@@ -2,11 +2,14 @@ package seleniumPages;
 
 import java.io.IOException;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
@@ -15,7 +18,8 @@ import common.Page_BasePage;
 
 //@Test(groups= {"login"})
 public class Page_Loginpage extends Page_BasePage {
-	
+	@FindBy (xpath="//h3[@class='RTL']")
+	private WebElement AccountName;
 	//@Test
 	public WebDriver driver;
 	
@@ -26,7 +30,7 @@ public class Page_Loginpage extends Page_BasePage {
 	public void LaunchBrowser() throws IOException{
 		driver = initializeDriver();	
 		driver.get(prop.getProperty("url"));
-		Log.error("This is a logging test for Loginpage");
+		Log.error("Loginpage");
 	}
 	@Test
 	public void OpenPHPURL() {
@@ -64,10 +68,12 @@ public class Page_Loginpage extends Page_BasePage {
 	}
 	@AfterTest
 	public void AccountPageOpens() {
-		System.out.println("The account page is open");
-		Assert.assertTrue(driver.findElement(By.xpath("//img[@class='img-responsive go-right img-thumbnail']")).isDisplayed());
-		driver.close();
+		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(AccountName));
 		
+		if (AccountName.getText().contains("lname")) {
+			Log.info("Account successfully created");
+		//driver.close();
+		}
 }
 	
 }

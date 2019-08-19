@@ -1,6 +1,8 @@
-13:30:04.054 [main] ERROR common.Page_BasePage - This is a logging test for Loginpage
-13:33:35.496 [main] ERROR common.Page_BasePage - This is a logging test for Searchpage
-13:33:58.116 [main] ERROR common.Page_BasePage - This is a logging test for Homepage
-13:34:18.912 [main] ERROR common.Page_BasePage - This is a logging test for Registerpage
-13:34:43.574 [main] ERROR common.Page_BasePage - This is a logging test for Loginpage
-13:37:35.864 [main] ERROR common.Page_BasePage - This is a logging test for Searchpage
+16:50:10.067 [main] ERROR common.Page_BasePage - Row NYC Hotel is not available
+16:50:50.067 [main] ERROR common.Page_BasePage - Searchpage
+16:51:24.148 [main] ERROR common.Page_BasePage - Homepage
+16:52:02.750 [main] ERROR common.Page_BasePage - Registerpage
+16:52:06.451 [main] INFO  common.Page_BasePage - The input is not correct
+16:52:34.712 [main] ERROR common.Page_BasePage - Loginpage
+10:14:48.306 [main] ERROR common.Page_BasePage - Searchpage
+10:16:12.719 [main] ERROR common.Page_BasePage - Searchpage

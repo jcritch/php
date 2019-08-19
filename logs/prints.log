@@ -1,3 +1,4 @@
-13:37:58.683 [main] ERROR common.Page_BasePage - This is a logging test for Homepage
-13:38:22.280 [main] ERROR common.Page_BasePage - This is a logging test for Registerpage
-13:38:58.408 [main] ERROR common.Page_BasePage - This is a logging test for Loginpage
+10:16:47.739 [main] ERROR common.Page_BasePage - Homepage
+10:17:31.104 [main] ERROR common.Page_BasePage - Registerpage
+10:17:35.588 [main] INFO  common.Page_BasePage - The input is not correct
+10:18:06.504 [main] ERROR common.Page_BasePage - Loginpage

@@ -32,6 +32,7 @@
       <class name="seleniumPages.Page_GuestSearch">
         <methods>
           <include name="enterHotel"/>
+          <include name="selectHotel"/>
           <include name="gotoHotelSearch"/>
         </methods>
       </class> <!-- seleniumPages.Page_GuestSearch -->

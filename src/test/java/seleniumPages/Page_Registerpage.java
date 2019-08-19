@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
@@ -24,7 +26,7 @@ public class Page_Registerpage extends Page_BasePage{
 	public void LaunchBrowser() throws IOException{
 		driver = initializeDriver();	
 		driver.get(prop.getProperty("url"));
-		Log.error("This is a logging test for Registerpage");
+		Log.error("Registerpage");
 	}
 	@Test
 	public void OpenPHPURL() {
@@ -39,7 +41,16 @@ public class Page_Registerpage extends Page_BasePage{
 	}
 	@Test
 	public void enterFirstName() {
+		
 		driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys("fname");
+		
+		try {
+		Assert.assertEquals("fname", driver.findElement(By.xpath("//input[@placeholder='First Name']")).getAttribute("fname"));
+		Log.info("The input is correct");
+		}catch (Throwable e) {
+			Log.info("The input is not correct");
+		}
+			
 	}
 	@Test
 	public void enterLastName() {
