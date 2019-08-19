@@ -6,10 +6,11 @@
       <class name="seleniumPages.Page_Registerpage">
         <methods>
           <include name="enterFirstName"/>
+          <include name="LaunchBrowser"/>
           <include name="enterLastName"/>
           <include name="confirmPassword"/>
+          <include name="teardown"/>
           <include name="enterPassword"/>
-          <include name="AccountPageOpens"/>
           <include name="SignUp"/>
           <include name="enterEmail"/>
           <include name="enterMobile"/>
@@ -22,7 +23,8 @@
       <class name="seleniumPages.Page_Loginpage">
         <methods>
           <include name="Login"/>
-          <include name="AccountPageOpens"/>
+          <include name="teardown"/>
+          <include name="LaunchBrowser"/>
         </methods>
       </class> <!-- seleniumPages.Page_Loginpage -->
     </classes>
@@ -31,8 +33,9 @@
     <classes>
       <class name="seleniumPages.Page_GuestSearch">
         <methods>
-          <include name="enterHotel"/>
-          <include name="selectHotel"/>
+          <include name="teardown"/>
+          <include name="hotelSearch"/>
+          <include name="launchBrowser"/>
           <include name="gotoHotelSearch"/>
         </methods>
       </class> <!-- seleniumPages.Page_GuestSearch -->

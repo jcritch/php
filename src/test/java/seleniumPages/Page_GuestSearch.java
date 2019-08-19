@@ -12,6 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import common.Page_BasePage;
@@ -19,76 +21,81 @@ import common.Page_BasePage;
 //@Test(groups= {"search"})
 public class Page_GuestSearch extends Page_BasePage {
 	
-	@Test
+	@BeforeTest
 	public void launchBrowser() throws IOException {
 		driver = initializeDriver();	
 		driver.get(prop.getProperty("url"));
 		Log.error("Searchpage");
 	}	
-	@Test
+	@Test(priority = 1)
 	public void openPHPURL() {
 		driver.manage().window().maximize();
 	}
-	@Test
+	@Test(priority = 2)
 	public void gotoHotelSearch() {
 		driver.findElement(By.xpath("//li[@class='active text-center']//a[@class='text-center']")).click();
 		
 	}
-	@Test
+	@Test(priority = 3)
 	public void enterHotel() {
 		
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.linkText("Search by Hotel or City Name")))).click();
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.linkText("Search by Hotel or City Name")))).sendKeys("New York");
 		
 	}
-	@Test
+	@Test(priority = 4)
 	public void selectHotel() {
 		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='select2-drop select2-display-none select2-with-searchbox select2-drop-active']//ul[@class='select2-results']"))).click();
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='select2-search']/input[@class='select2-input select2-focused']"))).sendKeys(Keys.ARROW_DOWN);
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='select2-search']/input[@class='select2-input select2-focused']"))).sendKeys(Keys.ENTER, Keys.TAB);	
 	}
 	
-	@Test
+	@Test(priority = 5)
 	public void enterCheckIn() {
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//div[@id='dpd1']//input[@placeholder='Check in']")))).click();
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//div[@id='dpd1']//input[@placeholder='Check in']")))).sendKeys("01/10/2019");
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//div[@id='dpd1']//input[@placeholder='Check in']")))).sendKeys(Keys.TAB);
 	}
-	@Test
+	@Test(priority = 6)
 	public void enterCheckOut() {
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@placeholder='Check out']")))).click();
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@placeholder='Check out']")))).sendKeys("10/10/2019");
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@placeholder='Check out']")))).sendKeys(Keys.TAB);
 	}
 	
-	@Test
+	@Test(priority = 7)
 	public void enterGuests() {
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@id='htravellersInput']")))).click();
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@id='htravellersInput']")))).sendKeys(Keys.TAB);	
 	}
 	
-	@Test
+	@Test(priority = 8)
 	public void hotelSearch() {
 		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//button[@class='btn btn-lg btn-block btn-primary pfb0 loader']")))).click();
 	}
 	
-	@Test
+	@Test(priority = 9)
 	public void hotelResults() {
 		//String actualText = "Property Location A stay at Row NYC places you in";
 		//Assert.assertEquals(actualText, driver.findElement(By.xpath("//p[contains(text(),'Property Location A stay at Row NYC places you in')]")));
 		
-		Assert.assertTrue(driver.getPageSource().contains("Property Location A stay at Row NYC places"));
+		//Assert.assertTrue(driver.getPageSource().contains("Property Location A stay at Row NYC places"));
 		
-		boolean Error = driver.getPageSource().contains("Property Location A stay at Row NYC places");
-	    if (Error == true)
-	    {
-	     Log.error("Row NYC Hotel is not available");
-	    }
-	    else
-	    {
-	     Log.error("Row NYC Hotel is available");
-	    }
+		//boolean Error = driver.getPageSource().contains("Property Location A stay at Row NYC places");
+	   // if (Error == true)
+	    //{
+	    // Log.error("Row NYC Hotel is not available");
+	   // }
+	   // else
+	    //{
+	    // Log.error("Row NYC Hotel is available");
+	    //}
 	
+	    //driver.close();
 	
 }
+	@AfterTest
+	public void teardown() {
+		driver.close();
+	}
 }

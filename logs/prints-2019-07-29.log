@@ -1,8 +1,9 @@
-16:50:10.067 [main] ERROR common.Page_BasePage - Row NYC Hotel is not available
-16:50:50.067 [main] ERROR common.Page_BasePage - Searchpage
-16:51:24.148 [main] ERROR common.Page_BasePage - Homepage
-16:52:02.750 [main] ERROR common.Page_BasePage - Registerpage
-16:52:06.451 [main] INFO  common.Page_BasePage - The input is not correct
-16:52:34.712 [main] ERROR common.Page_BasePage - Loginpage
-10:14:48.306 [main] ERROR common.Page_BasePage - Searchpage
-10:16:12.719 [main] ERROR common.Page_BasePage - Searchpage
+12:03:11.996 [main] ERROR common.Page_BasePage - Loginpage
+12:07:02.304 [main] ERROR common.Page_BasePage - Homepage
+12:07:21.015 [main] ERROR common.Page_BasePage - Registerpage
+12:08:53.594 [main] ERROR common.Page_BasePage - Loginpage
+12:09:27.645 [main] ERROR common.Page_BasePage - Searchpage
+12:16:02.979 [main] ERROR common.Page_BasePage - Homepage
+12:16:21.989 [main] ERROR common.Page_BasePage - Registerpage
+12:16:24.909 [main] INFO  common.Page_BasePage - The input is not correct
+12:16:51.005 [main] ERROR common.Page_BasePage - Loginpage
