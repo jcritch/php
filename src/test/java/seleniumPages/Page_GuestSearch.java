@@ -1,7 +1,11 @@
 package seleniumPages;
 
 
+import java.io.FileInputStream;
+
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -23,75 +27,55 @@ public class Page_GuestSearch extends Page_BasePage {
 	
 	@BeforeTest
 	public void launchBrowser() throws IOException {
+		
 		driver = initializeDriver();	
 		driver.get(prop.getProperty("url"));
-		Log.error("Searchpage");
-	}	
-	@Test(priority = 1)
-	public void openPHPURL() {
 		driver.manage().window().maximize();
-	}
-	@Test(priority = 2)
+		//Log.error("Searchpage");
+	}	
+	
+	@Test(priority = 1)
 	public void gotoHotelSearch() {
 		driver.findElement(By.xpath("//li[@class='active text-center']//a[@class='text-center']")).click();
 		
 	}
+	@Test(priority = 2)
+	public void enterHotelInformation() throws IOException {
+		
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream("C:\\Users\\Jennifer Critch\\eclipse-workspace\\PHPTravels\\resources\\phpdata.properties");
+		prop.load(fis);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		
+		wait.until(ExpectedConditions.elementToBeClickable((By.linkText("Search by Hotel or City Name")))).click();
+		wait.until(ExpectedConditions.elementToBeClickable((By.linkText("Search by Hotel or City Name")))).sendKeys(prop.getProperty("city"));
+		
+
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='select2-drop select2-display-none select2-with-searchbox select2-drop-active']//ul[@class='select2-results']"))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='select2-search']/input[@class='select2-input select2-focused']"))).sendKeys(Keys.ARROW_DOWN);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='select2-search']/input[@class='select2-input select2-focused']"))).sendKeys(Keys.ENTER, Keys.TAB);	
+		
+		wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//div[@id='dpd1']//input[@placeholder='Check in']")))).click();
+		wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//div[@id='dpd1']//input[@placeholder='Check in']")))).sendKeys(prop.getProperty("checkin"));
+		wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//div[@id='dpd1']//input[@placeholder='Check in']")))).sendKeys(Keys.TAB);
+		
+		wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@placeholder='Check out']")))).click();
+		wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@placeholder='Check out']")))).sendKeys(prop.getProperty("checkout"));
+		wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@placeholder='Check out']")))).sendKeys(Keys.TAB);
+		
+		wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@id='htravellersInput']")))).click();
+		wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@id='htravellersInput']")))).sendKeys(Keys.TAB);	
+	}
+	
 	@Test(priority = 3)
-	public void enterHotel() {
-		
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.linkText("Search by Hotel or City Name")))).click();
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.linkText("Search by Hotel or City Name")))).sendKeys("New York");
-		
-	}
-	@Test(priority = 4)
-	public void selectHotel() {
-		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='select2-drop select2-display-none select2-with-searchbox select2-drop-active']//ul[@class='select2-results']"))).click();
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='select2-search']/input[@class='select2-input select2-focused']"))).sendKeys(Keys.ARROW_DOWN);
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='select2-search']/input[@class='select2-input select2-focused']"))).sendKeys(Keys.ENTER, Keys.TAB);	
-	}
-	
-	@Test(priority = 5)
-	public void enterCheckIn() {
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//div[@id='dpd1']//input[@placeholder='Check in']")))).click();
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//div[@id='dpd1']//input[@placeholder='Check in']")))).sendKeys("01/10/2019");
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//div[@id='dpd1']//input[@placeholder='Check in']")))).sendKeys(Keys.TAB);
-	}
-	@Test(priority = 6)
-	public void enterCheckOut() {
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@placeholder='Check out']")))).click();
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@placeholder='Check out']")))).sendKeys("10/10/2019");
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@placeholder='Check out']")))).sendKeys(Keys.TAB);
-	}
-	
-	@Test(priority = 7)
-	public void enterGuests() {
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@id='htravellersInput']")))).click();
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//input[@id='htravellersInput']")))).sendKeys(Keys.TAB);	
-	}
-	
-	@Test(priority = 8)
 	public void hotelSearch() {
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.xpath("//button[@class='btn btn-lg btn-block btn-primary pfb0 loader']")))).click();
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.elementToBeClickable((By.xpath("//button[@class='btn btn-lg btn-block btn-primary pfb0 loader']")))).click();
 	}
 	
-	@Test(priority = 9)
+	@Test(priority = 4)
 	public void hotelResults() {
-		//String actualText = "Property Location A stay at Row NYC places you in";
-		//Assert.assertEquals(actualText, driver.findElement(By.xpath("//p[contains(text(),'Property Location A stay at Row NYC places you in')]")));
 		
-		//Assert.assertTrue(driver.getPageSource().contains("Property Location A stay at Row NYC places"));
-		
-		//boolean Error = driver.getPageSource().contains("Property Location A stay at Row NYC places");
-	   // if (Error == true)
-	    //{
-	    // Log.error("Row NYC Hotel is not available");
-	   // }
-	   // else
-	    //{
-	    // Log.error("Row NYC Hotel is available");
-	    //}
-	
-	    //driver.close();
 	
 }
 	@AfterTest

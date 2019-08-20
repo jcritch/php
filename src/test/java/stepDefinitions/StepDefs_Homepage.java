@@ -14,11 +14,6 @@ public class StepDefs_Homepage {
 	    	phpHomepage.launchBrowser();
 	    }
 
-	    @When("^I open PHP Homepage$")
-	    public void i_open_php_homepage() throws Exception {
-	    	phpHomepage.openPHPURL();
-	    }
-
 	    @Then("^I verify that the Hotels link is displayed$")
 	    public void i_verify_that_the_hotels_link_is_displayed() throws Exception {
 	    	phpHomepage.checkHotelLink();

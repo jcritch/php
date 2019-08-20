@@ -9,12 +9,7 @@ Scenario: Check that the user can create an account
 Given user launches Browser
 When user opens Homepage
 Then user navigates to the SignUp page
-And user enters the First Name field with "fname"
-And user enters the Last Name field with "lname"
-And user enters the Mobile Number field with "mobile1"
-And user enters the Email field with "fl@inmarsat.com"
-And user enters the Password field with "password1"
-And user enters the Confirm Password field with "password1"
+And user enters the Information
 And user clicks the SignUp button
 Then verify account page opens
 

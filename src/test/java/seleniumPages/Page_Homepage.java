@@ -26,18 +26,14 @@ public class Page_Homepage extends Page_BasePage {
 	
 	@BeforeTest
 	public void launchBrowser() throws IOException {
+		
 		driver = initializeDriver();	
 		driver.get(prop.getProperty("url"));
-		Log.error("Homepage");
-	}	
-	//@Test(groups= {"home"})
-	@Test(priority = 1)
-	public void openPHPURL() {
 		driver.manage().window().maximize();
-	}
+		//Log.error("Homepage");
+	}	
 	
-	
-	@Test(priority = 2)
+	@Test(priority = 1)
 	public void checkHotelLink() {
 		//new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable((By.linkText("Search by Hotel or City Name")))).click();
 		//String bodyText = driver.findElement(By.linkText("Hotels")).getText();

@@ -1,9 +1,9 @@
-12:03:11.996 [main] ERROR common.Page_BasePage - Loginpage
-12:07:02.304 [main] ERROR common.Page_BasePage - Homepage
-12:07:21.015 [main] ERROR common.Page_BasePage - Registerpage
-12:08:53.594 [main] ERROR common.Page_BasePage - Loginpage
-12:09:27.645 [main] ERROR common.Page_BasePage - Searchpage
-12:16:02.979 [main] ERROR common.Page_BasePage - Homepage
-12:16:21.989 [main] ERROR common.Page_BasePage - Registerpage
-12:16:24.909 [main] INFO  common.Page_BasePage - The input is not correct
-12:16:51.005 [main] ERROR common.Page_BasePage - Loginpage
+13:23:02.049 [main] ERROR common.Page_BasePage - Loginpage
+13:23:28.999 [main] ERROR common.Page_BasePage - Searchpage
+13:24:20.900 [main] ERROR common.Page_BasePage - Searchpage
+13:31:04.792 [main] ERROR common.Page_BasePage - Homepage
+13:31:30.492 [main] ERROR common.Page_BasePage - Registerpage
+13:32:02.180 [main] ERROR common.Page_BasePage - Loginpage
+13:32:32.125 [main] ERROR common.Page_BasePage - Searchpage
+13:33:19.598 [main] ERROR common.Page_BasePage - Searchpage
+13:42:23.079 [main] ERROR common.Page_BasePage - Registerpage

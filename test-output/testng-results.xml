@@ -1,157 +1,268 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="25" passed="25">
+<testng-results skipped="0" failed="2" ignored="0" total="17" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="phpTravels" duration-ms="126354" started-at="2019-08-19T14:45:37Z" finished-at="2019-08-19T14:47:44Z">
+  <suite name="phpTravels" duration-ms="168465" started-at="2019-08-20T17:59:58Z" finished-at="2019-08-20T18:02:46Z">
     <groups>
     </groups>
-    <test name="Homepage" duration-ms="28044" started-at="2019-08-19T14:45:37Z" finished-at="2019-08-19T14:46:05Z">
-      <class name="seleniumPages.Page_Homepage">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:seleniumPages.Page_Homepage@77fbd92c]" name="launchBrowser" is-config="true" duration-ms="25203" started-at="2019-08-19T14:45:37Z" finished-at="2019-08-19T14:46:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="openPHPURL()[pri:1, instance:seleniumPages.Page_Homepage@77fbd92c]" name="openPHPURL" duration-ms="447" started-at="2019-08-19T14:46:03Z" finished-at="2019-08-19T14:46:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openPHPURL -->
-        <test-method status="PASS" signature="checkHotelLink()[pri:2, instance:seleniumPages.Page_Homepage@77fbd92c]" name="checkHotelLink" duration-ms="23" started-at="2019-08-19T14:46:03Z" finished-at="2019-08-19T14:46:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkHotelLink -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:seleniumPages.Page_Homepage@77fbd92c]" name="teardown" is-config="true" duration-ms="2298" started-at="2019-08-19T14:46:03Z" finished-at="2019-08-19T14:46:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- seleniumPages.Page_Homepage -->
-    </test> <!-- Homepage -->
-    <test name="Register" duration-ms="22354" started-at="2019-08-19T14:46:05Z" finished-at="2019-08-19T14:46:28Z">
+    <test name="Register" duration-ms="29354" started-at="2019-08-20T17:59:58Z" finished-at="2019-08-20T18:00:27Z">
       <class name="seleniumPages.Page_Registerpage">
-        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:seleniumPages.Page_Registerpage@6f1de4c7]" name="LaunchBrowser" is-config="true" duration-ms="16089" started-at="2019-08-19T14:46:05Z" finished-at="2019-08-19T14:46:21Z">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:seleniumPages.Page_Registerpage@77fbd92c]" name="LaunchBrowser" is-config="true" duration-ms="22106" started-at="2019-08-20T17:59:58Z" finished-at="2019-08-20T18:00:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="OpenPHPURL()[pri:1, instance:seleniumPages.Page_Registerpage@6f1de4c7]" name="OpenPHPURL" duration-ms="393" started-at="2019-08-19T14:46:21Z" finished-at="2019-08-19T14:46:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenPHPURL -->
-        <test-method status="PASS" signature="goToSignUpPage()[pri:2, instance:seleniumPages.Page_Registerpage@6f1de4c7]" name="goToSignUpPage" duration-ms="2181" started-at="2019-08-19T14:46:22Z" finished-at="2019-08-19T14:46:24Z">
+        <test-method status="PASS" signature="goToSignUpPage()[pri:1, instance:seleniumPages.Page_Registerpage@77fbd92c]" name="goToSignUpPage" duration-ms="3508" started-at="2019-08-20T18:00:20Z" finished-at="2019-08-20T18:00:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToSignUpPage -->
-        <test-method status="PASS" signature="enterFirstName()[pri:3, instance:seleniumPages.Page_Registerpage@6f1de4c7]" name="enterFirstName" duration-ms="325" started-at="2019-08-19T14:46:24Z" finished-at="2019-08-19T14:46:24Z">
+        <test-method status="PASS" signature="enterInformation()[pri:2, instance:seleniumPages.Page_Registerpage@77fbd92c]" name="enterInformation" duration-ms="3163" started-at="2019-08-20T18:00:24Z" finished-at="2019-08-20T18:00:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterFirstName -->
-        <test-method status="PASS" signature="enterLastName()[pri:4, instance:seleniumPages.Page_Registerpage@6f1de4c7]" name="enterLastName" duration-ms="179" started-at="2019-08-19T14:46:24Z" finished-at="2019-08-19T14:46:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterLastName -->
-        <test-method status="PASS" signature="enterMobile()[pri:5, instance:seleniumPages.Page_Registerpage@6f1de4c7]" name="enterMobile" duration-ms="219" started-at="2019-08-19T14:46:25Z" finished-at="2019-08-19T14:46:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterMobile -->
-        <test-method status="PASS" signature="enterEmail()[pri:6, instance:seleniumPages.Page_Registerpage@6f1de4c7]" name="enterEmail" duration-ms="315" started-at="2019-08-19T14:46:25Z" finished-at="2019-08-19T14:46:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterEmail -->
-        <test-method status="PASS" signature="enterPassword()[pri:7, instance:seleniumPages.Page_Registerpage@6f1de4c7]" name="enterPassword" duration-ms="160" started-at="2019-08-19T14:46:25Z" finished-at="2019-08-19T14:46:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterPassword -->
-        <test-method status="PASS" signature="confirmPassword()[pri:8, instance:seleniumPages.Page_Registerpage@6f1de4c7]" name="confirmPassword" duration-ms="151" started-at="2019-08-19T14:46:25Z" finished-at="2019-08-19T14:46:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- confirmPassword -->
-        <test-method status="PASS" signature="SignUp()[pri:9, instance:seleniumPages.Page_Registerpage@6f1de4c7]" name="SignUp" duration-ms="78" started-at="2019-08-19T14:46:25Z" finished-at="2019-08-19T14:46:26Z">
+        </test-method> <!-- enterInformation -->
+        <test-method status="PASS" signature="SignUp()[pri:3, instance:seleniumPages.Page_Registerpage@77fbd92c]" name="SignUp" duration-ms="51" started-at="2019-08-20T18:00:27Z" finished-at="2019-08-20T18:00:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignUp -->
-        <test-method status="PASS" signature="AccountPageOpens()[pri:10, instance:seleniumPages.Page_Registerpage@6f1de4c7]" name="AccountPageOpens" duration-ms="1" started-at="2019-08-19T14:46:26Z" finished-at="2019-08-19T14:46:26Z">
+        <test-method status="PASS" signature="AccountPageOpens()[pri:4, instance:seleniumPages.Page_Registerpage@77fbd92c]" name="AccountPageOpens" duration-ms="4" started-at="2019-08-20T18:00:27Z" finished-at="2019-08-20T18:00:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AccountPageOpens -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:seleniumPages.Page_Registerpage@6f1de4c7]" name="teardown" is-config="true" duration-ms="2218" started-at="2019-08-19T14:46:26Z" finished-at="2019-08-19T14:46:28Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:seleniumPages.Page_Registerpage@77fbd92c]" name="teardown" is-config="true" duration-ms="409" started-at="2019-08-20T18:00:27Z" finished-at="2019-08-20T18:00:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- seleniumPages.Page_Registerpage -->
     </test> <!-- Register -->
-    <test name="Login" duration-ms="28925" started-at="2019-08-19T14:46:28Z" finished-at="2019-08-19T14:46:57Z">
-      <class name="seleniumPages.Page_Loginpage">
-        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:seleniumPages.Page_Loginpage@33d512c1]" name="LaunchBrowser" is-config="true" duration-ms="22690" started-at="2019-08-19T14:46:28Z" finished-at="2019-08-19T14:46:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="OpenPHPURL()[pri:1, instance:seleniumPages.Page_Loginpage@33d512c1]" name="OpenPHPURL" duration-ms="337" started-at="2019-08-19T14:46:51Z" finished-at="2019-08-19T14:46:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenPHPURL -->
-        <test-method status="PASS" signature="goToLoginPage()[pri:2, instance:seleniumPages.Page_Loginpage@33d512c1]" name="goToLoginPage" duration-ms="2993" started-at="2019-08-19T14:46:51Z" finished-at="2019-08-19T14:46:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToLoginPage -->
-        <test-method status="PASS" signature="Login()[pri:5, instance:seleniumPages.Page_Loginpage@33d512c1]" name="Login" duration-ms="308" started-at="2019-08-19T14:46:54Z" finished-at="2019-08-19T14:46:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="AccountPageOpens()[pri:6, instance:seleniumPages.Page_Loginpage@33d512c1]" name="AccountPageOpens" duration-ms="3" started-at="2019-08-19T14:46:54Z" finished-at="2019-08-19T14:46:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AccountPageOpens -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:seleniumPages.Page_Loginpage@33d512c1]" name="teardown" is-config="true" duration-ms="2576" started-at="2019-08-19T14:46:54Z" finished-at="2019-08-19T14:46:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- seleniumPages.Page_Loginpage -->
-    </test> <!-- Login -->
-    <test name="Search" duration-ms="46898" started-at="2019-08-19T14:46:57Z" finished-at="2019-08-19T14:47:44Z">
+    <test name="Search" duration-ms="39608" started-at="2019-08-20T18:00:28Z" finished-at="2019-08-20T18:01:07Z">
       <class name="seleniumPages.Page_GuestSearch">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:seleniumPages.Page_GuestSearch@2d3379b4]" name="launchBrowser" is-config="true" duration-ms="22090" started-at="2019-08-19T14:46:57Z" finished-at="2019-08-19T14:47:19Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:seleniumPages.Page_GuestSearch@6f1de4c7]" name="launchBrowser" is-config="true" duration-ms="22729" started-at="2019-08-20T18:00:28Z" finished-at="2019-08-20T18:00:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="openPHPURL()[pri:1, instance:seleniumPages.Page_GuestSearch@2d3379b4]" name="openPHPURL" duration-ms="571" started-at="2019-08-19T14:47:19Z" finished-at="2019-08-19T14:47:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openPHPURL -->
-        <test-method status="PASS" signature="gotoHotelSearch()[pri:2, instance:seleniumPages.Page_GuestSearch@2d3379b4]" name="gotoHotelSearch" duration-ms="419" started-at="2019-08-19T14:47:19Z" finished-at="2019-08-19T14:47:20Z">
+        <test-method status="PASS" signature="gotoHotelSearch()[pri:1, instance:seleniumPages.Page_GuestSearch@6f1de4c7]" name="gotoHotelSearch" duration-ms="866" started-at="2019-08-20T18:00:50Z" finished-at="2019-08-20T18:00:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotoHotelSearch -->
-        <test-method status="PASS" signature="enterHotel()[pri:3, instance:seleniumPages.Page_GuestSearch@2d3379b4]" name="enterHotel" duration-ms="1022" started-at="2019-08-19T14:47:20Z" finished-at="2019-08-19T14:47:21Z">
+        <test-method status="PASS" signature="enterHotelInformation()[pri:2, instance:seleniumPages.Page_GuestSearch@6f1de4c7]" name="enterHotelInformation" duration-ms="9890" started-at="2019-08-20T18:00:51Z" finished-at="2019-08-20T18:01:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterHotel -->
-        <test-method status="PASS" signature="selectHotel()[pri:4, instance:seleniumPages.Page_GuestSearch@2d3379b4]" name="selectHotel" duration-ms="1120" started-at="2019-08-19T14:47:21Z" finished-at="2019-08-19T14:47:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectHotel -->
-        <test-method status="PASS" signature="enterCheckIn()[pri:5, instance:seleniumPages.Page_GuestSearch@2d3379b4]" name="enterCheckIn" duration-ms="641" started-at="2019-08-19T14:47:22Z" finished-at="2019-08-19T14:47:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterCheckIn -->
-        <test-method status="PASS" signature="enterCheckOut()[pri:6, instance:seleniumPages.Page_GuestSearch@2d3379b4]" name="enterCheckOut" duration-ms="679" started-at="2019-08-19T14:47:23Z" finished-at="2019-08-19T14:47:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterCheckOut -->
-        <test-method status="PASS" signature="enterGuests()[pri:7, instance:seleniumPages.Page_GuestSearch@2d3379b4]" name="enterGuests" duration-ms="844" started-at="2019-08-19T14:47:23Z" finished-at="2019-08-19T14:47:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterGuests -->
-        <test-method status="PASS" signature="hotelSearch()[pri:8, instance:seleniumPages.Page_GuestSearch@2d3379b4]" name="hotelSearch" duration-ms="16724" started-at="2019-08-19T14:47:24Z" finished-at="2019-08-19T14:47:41Z">
+        </test-method> <!-- enterHotelInformation -->
+        <test-method status="PASS" signature="hotelSearch()[pri:3, instance:seleniumPages.Page_GuestSearch@6f1de4c7]" name="hotelSearch" duration-ms="5019" started-at="2019-08-20T18:01:01Z" finished-at="2019-08-20T18:01:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hotelSearch -->
-        <test-method status="PASS" signature="hotelResults()[pri:9, instance:seleniumPages.Page_GuestSearch@2d3379b4]" name="hotelResults" duration-ms="1" started-at="2019-08-19T14:47:41Z" finished-at="2019-08-19T14:47:41Z">
+        <test-method status="PASS" signature="hotelResults()[pri:4, instance:seleniumPages.Page_GuestSearch@6f1de4c7]" name="hotelResults" duration-ms="2" started-at="2019-08-20T18:01:06Z" finished-at="2019-08-20T18:01:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hotelResults -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:seleniumPages.Page_GuestSearch@2d3379b4]" name="teardown" is-config="true" duration-ms="2765" started-at="2019-08-19T14:47:41Z" finished-at="2019-08-19T14:47:44Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:seleniumPages.Page_GuestSearch@6f1de4c7]" name="teardown" is-config="true" duration-ms="1061" started-at="2019-08-20T18:01:06Z" finished-at="2019-08-20T18:01:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- seleniumPages.Page_GuestSearch -->
     </test> <!-- Search -->
+    <test name="Login" duration-ms="33364" started-at="2019-08-20T18:01:07Z" finished-at="2019-08-20T18:01:41Z">
+      <class name="seleniumPages.Page_Loginpage">
+        <test-method status="PASS" signature="LaunchBrowser()[pri:0, instance:seleniumPages.Page_Loginpage@33d512c1]" name="LaunchBrowser" is-config="true" duration-ms="26020" started-at="2019-08-20T18:01:07Z" finished-at="2019-08-20T18:01:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method status="PASS" signature="goToLoginPage()[pri:1, instance:seleniumPages.Page_Loginpage@33d512c1]" name="goToLoginPage" duration-ms="3543" started-at="2019-08-20T18:01:33Z" finished-at="2019-08-20T18:01:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToLoginPage -->
+        <test-method status="PASS" signature="Login()[pri:4, instance:seleniumPages.Page_Loginpage@33d512c1]" name="Login" duration-ms="718" started-at="2019-08-20T18:01:37Z" finished-at="2019-08-20T18:01:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="AccountPageOpens()[pri:5, instance:seleniumPages.Page_Loginpage@33d512c1]" name="AccountPageOpens" duration-ms="4" started-at="2019-08-20T18:01:37Z" finished-at="2019-08-20T18:01:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountPageOpens -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:seleniumPages.Page_Loginpage@33d512c1]" name="teardown" is-config="true" duration-ms="3070" started-at="2019-08-20T18:01:37Z" finished-at="2019-08-20T18:01:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- seleniumPages.Page_Loginpage -->
+    </test> <!-- Login -->
+    <test name="Homepage" duration-ms="27977" started-at="2019-08-20T18:01:41Z" finished-at="2019-08-20T18:02:09Z">
+      <class name="seleniumPages.Page_Homepage">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:seleniumPages.Page_Homepage@2d3379b4]" name="launchBrowser" is-config="true" duration-ms="25463" started-at="2019-08-20T18:01:41Z" finished-at="2019-08-20T18:02:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="checkHotelLink()[pri:1, instance:seleniumPages.Page_Homepage@2d3379b4]" name="checkHotelLink" duration-ms="2" started-at="2019-08-20T18:02:06Z" finished-at="2019-08-20T18:02:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHotelLink -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:seleniumPages.Page_Homepage@2d3379b4]" name="teardown" is-config="true" duration-ms="2492" started-at="2019-08-20T18:02:06Z" finished-at="2019-08-20T18:02:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- seleniumPages.Page_Homepage -->
+    </test> <!-- Homepage -->
+    <test name="Tours" duration-ms="37821" started-at="2019-08-20T18:02:09Z" finished-at="2019-08-20T18:02:46Z">
+      <class name="seleniumPages.Page_ToursSearch">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:seleniumPages.Page_ToursSearch@36fc695d]" name="launchBrowser" is-config="true" duration-ms="6144" started-at="2019-08-20T18:02:09Z" finished-at="2019-08-20T18:02:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="openPHPURL()[pri:1, instance:seleniumPages.Page_ToursSearch@36fc695d]" name="openPHPURL" duration-ms="546" started-at="2019-08-20T18:02:15Z" finished-at="2019-08-20T18:02:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPHPURL -->
+        <test-method status="FAIL" signature="gotoToursSearch()[pri:2, instance:seleniumPages.Page_ToursSearch@36fc695d]" name="gotoToursSearch" duration-ms="10091" started-at="2019-08-20T18:02:15Z" finished-at="2019-08-20T18:02:25Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='text-center active']//a[@class='text-center']"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'MTP01090L', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\JENNIF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ccafd3a092c656b599877e9f7b7772bf
+*** Element info: {Using=xpath, value=//li[@class='text-center active']//a[@class='text-center']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class='text-center active']//a[@class='text-center']"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'MTP01090L', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\JENNIF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ccafd3a092c656b599877e9f7b7772bf
+*** Element info: {Using=xpath, value=//li[@class='text-center active']//a[@class='text-center']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at seleniumPages.Page_ToursSearch.gotoToursSearch(Page_ToursSearch.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoToursSearch -->
+        <test-method status="FAIL" signature="enterTourInformation()[pri:3, instance:seleniumPages.Page_ToursSearch@36fc695d]" name="enterTourInformation" duration-ms="20630" started-at="2019-08-20T18:02:25Z" finished-at="2019-08-20T18:02:46Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.linkText: Search by Listing or City Name (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: Search by Listing or City Name (tried for 20 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at seleniumPages.Page_ToursSearch.enterTourInformation(Page_ToursSearch.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Search by Listing or City Name"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'MTP01090L', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\JENNIF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ccafd3a092c656b599877e9f7b7772bf
+*** Element info: {Using=link text, value=Search by Listing or City Name}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterTourInformation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:seleniumPages.Page_ToursSearch@36fc695d]" name="teardown" is-config="true" duration-ms="406" started-at="2019-08-20T18:02:46Z" finished-at="2019-08-20T18:02:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tourSearch()[pri:4, instance:seleniumPages.Page_ToursSearch@36fc695d]" name="tourSearch" duration-ms="0" started-at="2019-08-20T18:02:46Z" finished-at="2019-08-20T18:02:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tourSearch -->
+        <test-method status="PASS" signature="tourResults()[pri:5, instance:seleniumPages.Page_ToursSearch@36fc695d]" name="tourResults" duration-ms="0" started-at="2019-08-20T18:02:46Z" finished-at="2019-08-20T18:02:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tourResults -->
+      </class> <!-- seleniumPages.Page_ToursSearch -->
+    </test> <!-- Tours -->
   </suite> <!-- phpTravels -->
 </testng-results>

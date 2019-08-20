@@ -29,37 +29,34 @@ public class Page_Loginpage extends Page_BasePage {
 	
 	@BeforeTest
 	public void LaunchBrowser() throws IOException{
+		
 		driver = initializeDriver();	
 		driver.get(prop.getProperty("url"));
-		Log.error("Loginpage");
-	}
-	@Test(priority = 1)
-	public void OpenPHPURL() {
-	
 		driver.manage().window().maximize();
-		
+		//Log.error("Loginpage");
 	}
-	@Test(priority = 2)
+	
+	@Test(priority = 1)
 	public void goToLoginPage() {
 		
 		driver.findElement(By.xpath("//ul[@class='nav navbar-nav navbar-right hidden-sm go-left']//a[@class='dropdown-toggle go-text-right'][contains(text(),'My Account')]")).click();
 		driver.findElement(By.xpath("//ul[@class='nav navbar-nav navbar-right hidden-sm go-left']//ul[@class='nav navbar-nav navbar-side navbar-right sidebar go-left user_menu']//li[@id='li_myaccount']//ul[@class='dropdown-menu']//li//a[@class='go-text-right'][contains(text(),'Login')]")).click();
 	}
-	@Test(priority = 3)
+	@Test(priority = 2)
 	public WebElement enterEmail() {
 		
 		return driver.findElement(email);
 		
 		}
 
-	@Test(priority = 4)
+	@Test(priority = 3)
 	public WebElement enterPassword() {
 		return driver.findElement(password);
 		
 		
 	}
 	
-	@Test(priority = 5)
+	@Test(priority = 4)
 	public void Login() {
 		
 		WebElement element = driver.findElement(By.cssSelector("div:nth-child(6) div:nth-child(2) div.col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3 form:nth-child(1) > button.btn.btn-action.btn-lg.btn-block.loginbtn:nth-child(3)"));
@@ -67,7 +64,7 @@ public class Page_Loginpage extends Page_BasePage {
 		executor.executeScript("arguments[0].click()", element);
 		
 	}
-	@Test(priority = 6)
+	@Test(priority = 5)
 	public void AccountPageOpens() {
 		//new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(AccountName));
 		

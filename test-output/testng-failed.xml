@@ -1,44 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [phpTravels]">
-  <test thread-count="5" name="Register(failed)">
+  <test thread-count="5" name="Tours(failed)">
     <classes>
-      <class name="seleniumPages.Page_Registerpage">
-        <methods>
-          <include name="enterFirstName"/>
-          <include name="LaunchBrowser"/>
-          <include name="enterLastName"/>
-          <include name="confirmPassword"/>
-          <include name="teardown"/>
-          <include name="enterPassword"/>
-          <include name="SignUp"/>
-          <include name="enterEmail"/>
-          <include name="enterMobile"/>
-        </methods>
-      </class> <!-- seleniumPages.Page_Registerpage -->
-    </classes>
-  </test> <!-- Register(failed) -->
-  <test thread-count="5" name="Login(failed)">
-    <classes>
-      <class name="seleniumPages.Page_Loginpage">
-        <methods>
-          <include name="Login"/>
-          <include name="teardown"/>
-          <include name="LaunchBrowser"/>
-        </methods>
-      </class> <!-- seleniumPages.Page_Loginpage -->
-    </classes>
-  </test> <!-- Login(failed) -->
-  <test thread-count="5" name="Search(failed)">
-    <classes>
-      <class name="seleniumPages.Page_GuestSearch">
+      <class name="seleniumPages.Page_ToursSearch">
         <methods>
           <include name="teardown"/>
-          <include name="hotelSearch"/>
           <include name="launchBrowser"/>
-          <include name="gotoHotelSearch"/>
+          <include name="gotoToursSearch"/>
+          <include name="enterTourInformation"/>
         </methods>
-      </class> <!-- seleniumPages.Page_GuestSearch -->
+      </class> <!-- seleniumPages.Page_ToursSearch -->
     </classes>
-  </test> <!-- Search(failed) -->
+  </test> <!-- Tours(failed) -->
 </suite> <!-- Failed suite [phpTravels] -->
